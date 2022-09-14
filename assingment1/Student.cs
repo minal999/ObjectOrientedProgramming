@@ -26,6 +26,11 @@ namespace assingment1
 
         public Student(int studentID, string name, int age, string gender, double percentage)
         {
+            studentID = 1;
+            name = "Kuldeep";
+            age = 25;
+            gender = "male";
+            percentage = 80.31;
             this.studentID = studentID;
             this.name = name;
             this.age = age;
