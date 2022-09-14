@@ -8,25 +8,25 @@ namespace assingment1
 {
     internal class Student
     {
-        int StudentID;
-        string Name;
-        int Age;
-        string Gender;
-        double Percentage;
+        int studentID;
+        string name;
+        int age;
+        string gender;
+        double percentage;
        
         
         public void AddDetails()
         {
-            StudentID = 1;
-            Name = "Kuldeep";
-            Age = 25;
-            Gender = "male";
-            Percentage = 80.31;
+            studentID = 1;
+            name = "Kuldeep";
+            age = 25;
+            gender = "male";
+            percentage = 80.31;
         }
 
         public string displayDetails()
         {
-            return $"Student ID ={StudentID}, Name ={Name}, Age ={Age}, Gender ={Gender}, Percentage ={Percentage}";
+            return $"Student ID ={studentID}, Name ={name}, Age ={age}, Gender ={gender}, Percentage ={percentage}";
         }
 
         
