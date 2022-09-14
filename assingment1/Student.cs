@@ -15,13 +15,22 @@ namespace assingment1
         double percentage;
        
         
-        public void AddDetails()
+        public Student()
         {
             studentID = 1;
             name = "Kuldeep";
             age = 25;
             gender = "male";
             percentage = 80.31;
+        }
+
+        public Student(int studentID, string name, int age, string gender, double percentage)
+        {
+            this.studentID = studentID;
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            this.percentage = percentage;
         }
 
         public string displayDetails()
