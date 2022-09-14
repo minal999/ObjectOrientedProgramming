@@ -9,6 +9,7 @@ namespace Assignment3
 {
     internal class Employee
     {
+
         int empid, bs;
         double hra, da, pf, pt = 200,total_salary,net_paid;
         string empname;
