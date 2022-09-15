@@ -25,8 +25,18 @@ namespace DateEx
         {
             get { return year; }
             set
-            {  year = value;}
+            { year = value; }
         }
+        //public int Day { get; set; }
+        //public string Month { get; set; }
+        //public  int Year { get; set; }
+
+        //public Date(int day,string month,int year)
+        //{
+        //       this.Day = day;
+        //    this.Month = month;
+        //        this.Year = year;
+        //}
         public override string ToString()
         {
             return $"Today's date is {day} / {month} / {year}";

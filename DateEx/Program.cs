@@ -11,9 +11,11 @@ namespace DateEx
     {
         static void Main(string[] args)
         {
-            Date date = new Date {Day=15,Month="sept",Year=2022};
+            Date date = new Date { Day=16,Month="july",Year=2021};
             
             Console.WriteLine(date);
+        
+
         }
     }
 }
