@@ -10,15 +10,43 @@ namespace Assignment3
     internal class Employee
     {
 
-        int empid, bs;
-        double hra, da, pf, pt = 200,total_salary,net_paid;
+        int empid;
+        //private static int count = 0;
+        double bs, hra, da, pf, pt,total_salary,net_paid;
         string empname;
 
-        public Employee(int empid, string empname, int bs)
+        //public Employee( string empname, double bs, double pt )
+        //{
+        //    count++;
+        //    empid = count;
+        //    this.empname = empname;
+        //    this.bs = bs;
+        //    this.pt = pt;
+        //}
+        //public static int DisplayCount()
+        //{
+        //    return count;
+        //}
+
+        public int EmployeeID
         {
-            this.empid = empid;
-            this.empname = empname;
-            this.bs = bs;
+            get { return empid; }
+            set{ empid = value; }
+        }
+        public double Basic
+        {
+            get { return bs; }
+            set { bs = value; }
+        }
+        public string EmployeeName
+        {
+            get { return empname; }
+            set { empname = value; }
+        }
+        public double Pt
+        {
+            get { return pt; }
+            set {  pt = value;}
         }
         public void CalculateSalary()
         {
@@ -29,7 +57,7 @@ namespace Assignment3
             net_paid = total_salary - pf - pt;
         }
 
-        public string Details()
+        public override string ToString()
         {
             return $"EmployeeID: {empid}\nEmployee Name: {empname}\nBasic Salary: {bs}\nTotal Salary: {total_salary}\nNet Paid: {net_paid}";
         }

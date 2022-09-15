@@ -11,14 +11,23 @@ namespace DateEx
         int day, year;
         string month;
 
-        public void AddValue()
+        public int Day
         {
-            day = 13;
-            month = "sept";
-            year = 2022;
-
+            get { return day; }
+            set { day = value; }
         }
-        public string DisplayValue()
+        public string Month
+        {
+            get { return month; }
+            set { month = value; }
+        }
+        public int Year
+        {
+            get { return year; }
+            set
+            {  year = value;}
+        }
+        public override string ToString()
         {
             return $"Today's date is {day} / {month} / {year}";
         }

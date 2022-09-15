@@ -12,9 +12,12 @@ namespace Assignment3
         static void Main(string[] args)
         {
             Console.WriteLine("Employee Details:");
-            Employee employee = new Employee(1, "Heena", 80000);
-            employee.CalculateSalary();
-            Console.WriteLine(employee.Details());
+            Employee employee1 = new Employee {EmployeeID=1,EmployeeName="yami",Basic=28000,Pt=500};
+            //Employee employee = new Employee("Heena", 80000,200);
+            employee1.CalculateSalary();
+            //Console.WriteLine(employee.Details());
+            //Console.WriteLine(Employee.DisplayCount());
+            Console.WriteLine(employee1);
         }
     }
 }
